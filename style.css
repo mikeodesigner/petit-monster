@@ -1,0 +1,54 @@
+@import url('grid.css');
+@import url('css/colors/light-grey.css');
+@import url('css/layout/menu-right.css');
+@import url('css/typography/book-classic.css');
+
+
+
+section.global > * >  p {max-width:30em; margin:0 auto;}
+section.feature { display:block; margin:3rem 0; float:left; text-align:left; }
+section.feature {width:45%; float:left; margin-left:1%;}
+section.feature > img {width:40%;}
+
+section.feature:nth-child(even) > img {float:left; margin-right:20px;}
+section.feature:nth-child(odd) > img {float:left; margin-right:20px;}
+section.feature:nth-child(even) {clear:both;}
+.features { margin:0 auto;}
+
+
+
+
+section#intro {
+background:#FFF;
+width:100%;
+z-index:20;
+position:fixed;
+top:0;
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */ 
+-webkit-transform-style: preserve-3d; 
+		} 
+
+
+section#idea {border:1px solid #CCC; background:#F3F3F3; margin-top:750px; z-index:300; -webkit-transform-style: preserve-3d; position:relative; }
+section.features {}
+section.customizer p {text-align:left}
+section#download {padding-top:200px; margin-top:30px; clear:both; display:block;}
+
+section.examples {float:left; overflow:hidden;}
+
+section.global > section {padding-top:100px; padding-bottom:100px;}
+
+section.examples > img {}
+.container {width:100%; text-align:center; margin:0 auto;}
+.width		{ width:90%; max-width:1000px; margin: 0 auto;  content: ""; display: table; clear: both;}
+
+
+header.global { background:#EFEFEF;  border-bottom:1px solid #ccc; height:30px; padding: 0 40px;  z-index:1000; position:fixed; top:0;}
+header.global > * {padding:10px;}
+
+.bg_box { display:block; width:370px; height:370px; margin:0 auto;overflow:hidden; }
+.bg_box img {width:100%; height:100%;  }
+
+footer.global {text-align:center;}

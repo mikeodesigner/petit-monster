@@ -1,0 +1,131 @@
+/* sort of a reset_______________________________________*/
+
+
+
+ ul, li, ol, body {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul {list-style:none;}
+
+
+header.global a {text-decoration:none;}
+
+#nav_link {display:none;}
+
+
+
+
+/* Simple grid system_______________________________________*/
+
+
+[class*='col-']
+{
+	display: inline;
+	float: left;
+	margin-right: 2%;
+	word-wrap:break-word;
+	box-sizing: border-box;
+	
+}
+
+.grid-row [class*='col-']:last-of-type {
+  margin-right:0;
+}
+
+
+.grid-row {
+	clear:both;
+	width:100%;
+}
+
+.col-1-6 {width:15%}
+.col-2-6 {width:32%;}
+.col-3-6, .gcol-4-8, .half {width:49%;}
+.col-4-6 {width:66%;}
+.col-5-6 {width:81.5%;}
+
+.col-1-8 {width:10.75%;}
+.col-2-8 {width:23.5%;}
+.col-3-8 {width:36.25%;}
+.col-4-8 {width:36.25%;}
+.col-5-8 {width:60.875%;}
+.col-6-8 {width:73.25%;}
+.col-7-8 {width:87.25%;}
+
+.col-8-8, .col-6-6, .full {width:100%;}
+
+.grid-row:after, 
+.grid-row:before, .width:before, .width:after {
+  content: "";
+  display: table;
+  clear: both;}
+
+.container:after 
+		{content:''; clear:both; display:block; overflow:hidden !important; visibility:hidden; width:0px; height:0px !important; padding:0px !important; margin:0 !important;}
+
+
+.floatright {float:right;}
+.floatleft {float:left;}
+
+img.fullwidth {max-width:100%;}
+
+
+/* Responsive grid_______________________________________*/
+
+
+@media only screen and (min-width: 1212px) {
+
+	.width {}
+	.col5_3_2_1 {width:18.8%;}
+	.col25_13_1 {width:38.6%;}
+	.col35_23_1 {width:58.4%;}
+}
+
+
+
+
+@media only screen and (max-width: 1212px) and (min-width: 800px) {
+	.width {}
+  .col5_3_2_1 {width:32%;}
+  .col25_13_1 {width:32%;}
+	.col35_23_1 {width:65%;}
+}
+
+
+
+@media only screen and (max-width: 800px) and (min-width: 480px) {
+	
+	.width {}
+  .col5_3_2_1 {width:48.5%} 
+	.col25_13_1 {width:98%;}
+	.col35_23_1 {width:98%;}
+}
+
+@media only screen and (max-width: 480px) and (min-width: 380px) {
+	
+	.width {}
+  .col5_3_2_1 {width:98%;}
+	.col25_13_1 {width:98%;}
+	.col35_23_1 {width:98%;}
+}
+
+
+@media only screen and (max-width: 380px) and (min-width: 240px) {
+	
+  .width {}
+  .col5_3_2_1 {width:98%;}
+  	
+}
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	#example {
+		background: rgb(255,158,97);
+	}
+	
+}
+

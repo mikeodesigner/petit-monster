@@ -1,0 +1,24 @@
+/* code == poetry */
+/* global elemetns layout */
+.container																{	width:1000px; margin:0 auto; }
+	header.global 													{ width:100%; float:left; position:relative; text-align:right; height:100%; display:table; } 
+		header.global hgroup 									{	float:left;}
+		nav.global														{ display:table-cell; vertical-align:middle; background: transparent; }
+			nav.global > ul 										{ display:block; float:right; margin:0; clear:both; } 
+				nav.global > ul > li						 	{ display:inline-block; padding:0 20px; }
+				nav.global > ul > li:last-child		{ padding-right:0; }
+				nav.global > ul > li:first-child	{ padding-left:0; }
+	section.global 													{ width: 70%; float: left; }
+	.home section.global 										{ width: 100%; float: left; }
+	aside.global														{ width: 30%; float: right; }
+	footer.global 													{ width: 100%; clear: left; float:left; text-align:left;}
+	footer.global p 												{ margin: 0;}
+                              						
+
+/* global vertical and horisontal white space */
+.global > * {padding:3rem 40px;}
+nav.global > ul {padding-top:1rem; padding-bottom:1rem;}
+.global 	{padding:0; margin:0;}/* ensures layouts won't break because padding changes width */
+
+
+
